@@ -33,6 +33,36 @@
     </h1>
 </h1>
 
+
+<div>
+    <!-- Form with method as POST -->
+    
+<form action="action.php" method="POST">
+    <label for="name" >Enter your name: </label>
+    <input type="text" name="name" placeholder="Your Name Here">
+    <label>Enter your age: </label>
+    <input type="text" name="age" placeholder="Your Age Here">
+
+    <button type="submit" >Submit</button>
+
+</form>
+
+</div>
+
+
+
+<!-- php date time -->
+
+<?php 
+    date_default_timezone_set('Asia/Dhaka');
+    echo date('Y-M-D h:m:sa');
+?>
+
+
+<!-- Footer of the page included here -->
+
+<?php require('footer.php') ?>
+
 </body>
 </html>
 
